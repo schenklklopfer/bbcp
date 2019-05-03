@@ -5,6 +5,18 @@ Securely and quickly copy data from source to target.
 
 ### Installation
 
+OpenIndiana (The Illumos Project SunOS 5.11 illumos-e742aada08 May 2019)
+
+```sh
+pkg install pkg:/developer/sunstudio12u1/c++@12.1.1-2018.0.0.5
+pkg install cc git
+git clone https://github.com/eeertekin/bbcp.git
+cd bbcp/src
+make
+cp ../bin/bin/sunx86/bbcp /usr/bin/bbcp
+bbcp --version
+```
+
 Ubuntu 12.04 LTS
 
 ```sh
