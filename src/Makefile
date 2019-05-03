@@ -268,7 +268,7 @@ Sungcc:
 
 $(TARGET): $(OBJECT)
 	@echo Creating executable $(TARGET) ...
-	@$(CC) $(OBJECT) $(LIBS) -o $(TARGET)
+	@$(CC) $(OBJECT) $(LIBS) -staticlib=Crun -staticlib=Cstd -o $(TARGET)
 
 $(OBJDIR)/bbcp.o: bbcp.C bbcp_Args.h bbcp_Config.h bbcp_Debug.h bbcp_FileSpec.h \
                   bbcp_LogFile.h bbcp_Node.h bbcp_Protocol.h bbcp_System.h \
